@@ -1,0 +1,29 @@
+{
+    "kind": "collectionType",
+    "collectionName": "quizzes",
+    "info": {
+        "singularName": "quiz",
+        "pluralName": "quizzes",
+        "displayName": "Quiz"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "question": {
+            "type": "string"
+        },
+        "options": {
+            "type": "json"
+        },
+        "correct_answer": {
+            "type": "string"
+        },
+        "course": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::course.course"
+        }
+    }
+}
