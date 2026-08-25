@@ -1,0 +1,25 @@
+/* Premium Course Creation Form CSS */
+.premium-form-container { max-width: 800px; margin: 40px auto; padding: 40px; background: #ffffff; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04); border: 1px solid rgba(226, 232, 240, 0.8); font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+.premium-form-title { font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 8px; letter-spacing: -0.02em; }
+.premium-form-subtitle { font-size: 15px; color: #64748b; margin-bottom: 32px; }
+.form-group { margin-bottom: 24px; position: relative; }
+.premium-label { display: block; font-size: 14px; font-weight: 600; color: #334155; margin-bottom: 8px; transition: color 0.2s ease; }
+.premium-input, .premium-textarea { width: 100%; padding: 14px 16px; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 15px; color: #1e293b; transition: all 0.3s ease; box-sizing: border-box; }
+.premium-input:hover, .premium-textarea:hover { background-color: #ffffff; border-color: #cbd5e1; }
+.premium-input:focus, .premium-textarea:focus { background-color: #ffffff; border-color: #3b82f6; box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1); outline: none; }
+.premium-textarea { resize: vertical; min-height: 120px; }
+.file-upload-wrapper { position: relative; width: 100%; height: 140px; border: 2px dashed #cbd5e1; border-radius: 12px; background-color: #f8fafc; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; cursor: pointer; overflow: hidden; }
+.file-upload-wrapper:hover { border-color: #3b82f6; background-color: #eff6ff; }
+.file-upload-wrapper input[type="file"] { position: absolute; width: 100%; height: 100%; top: 0; left: 0; opacity: 0; cursor: pointer; z-index: 2; }
+.file-upload-content { display: flex; flex-direction: column; align-items: center; gap: 8px; z-index: 1; pointer-events: none; }
+.upload-icon { width: 32px; height: 32px; color: #64748b; transition: color 0.3s ease; }
+.file-upload-wrapper:hover .upload-icon { color: #3b82f6; }
+.upload-text { font-size: 14px; font-weight: 500; color: #475569; }
+.upload-subtext { font-size: 12px; color: #94a3b8; }
+.file-name-display { margin-top: 12px; padding: 8px 12px; background: #f1f5f9; border-radius: 6px; font-size: 13px; color: #334155; display: flex; align-items: center; gap: 8px; }
+.premium-submit-btn { width: 100%; padding: 16px; background: linear-gradient(135deg, #2563eb, #3b82f6); color: white; border: none; border-radius: 10px; font-size: 16px; font-weight: 600; letter-spacing: 0.01em; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2); display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 32px; }
+.premium-submit-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3); }
+.premium-submit-btn:active { transform: translateY(0); }
+.premium-submit-btn:disabled { background: #94a3b8; cursor: not-allowed; transform: none; box-shadow: none; }
+.loading-spinner { width: 20px; height: 20px; border: 2px solid rgba(255,255,255,0.3); border-radius: 50%; border-top-color: white; animation: spin 1s ease-in-out infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }

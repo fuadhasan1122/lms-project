@@ -17,10 +17,33 @@
         "description": {
             "type": "blocks"
         },
-        "users_permissions_user": {
+        "coverImage": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "instructor": {
             "type": "relation",
-            "relation": "oneToOne",
-            "target": "plugin::users-permissions.user"
+            "relation": "manyToOne",
+            "target": "plugin::users-permissions.user",
+            "inversedBy": "courses"
+        },
+        "lessons": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::lesson.lesson",
+            "mappedBy": "course"
+        },
+        "quizzes": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::quiz.quiz",
+            "mappedBy": "course"
         }
     }
 }
