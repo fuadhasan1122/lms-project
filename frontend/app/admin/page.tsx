@@ -59,10 +59,10 @@ export default function AdminDashboard() {
 
       {/* Quick Actions */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-        <h2 className="text-xl font-bold text-gray-800 mb-6">Quick Actions</h2>
+        <h2 className="text-xl font-bold text-gray-800 mb-6">Quick  Actions</h2>
         <div className="flex space-x-4">
           <Link href="/admin/courses/create" className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">
-            + Create New Course
+            + Create  New Course
           </Link>
           <Link href="/admin/courses" className="px-6 py-3 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition">
             View All Courses
